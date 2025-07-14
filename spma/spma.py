@@ -274,7 +274,6 @@ class SPMA(OnPolicyAlgorithm):
 
                 else:
                     self.policy.optimizer_act.step()
-                    self.policy.optimizer_act.step()
 
 
                 grad_list = get_grad_list(self.policy.params_critic)
