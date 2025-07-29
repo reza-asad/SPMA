@@ -84,8 +84,8 @@ class SPMA(OnPolicyAlgorithm):
         use_armijo_actor: bool = False,
         use_armijo_critic: bool = False,
         alpha_max: float = 1e6,
-        c_actor: float = 0.1,
-        c_critic: float = 1e-6,
+        c_actor: float = 0.5,
+        c_critic: float = 0.5,
         eta: float = 1.0,
     ):
         super().__init__(
